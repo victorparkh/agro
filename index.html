@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <!-- <script type='text/javascript' src='http://davidlynch.org/projects/maphilight/jquery.maphilight.js'></script> -->
+    <script type='text/javascript' src='maphilight.js'></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.map').maphilight({
+                // alwaysOn: true
+            });
+        });
+    </script>
+    <title>Document</title>
+    <style>
+        #title {
+            line-height: 0;
+        }
+
+        #title img {
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="title">
+        <img src="map2.jpeg" usemap="#Agro" alt="" class="map">
+    </div>
+    <p>
+        <map name="Agro">
+            <area shape="poly" coords="70,224,150,204,140,165,60,185" href="javascript:alert('My Left Eye.');"
+                alt="Информация">
+            <area shape="poly" coords="405,107,428,118,428,138,470,132,473,108,478,102,415,85"
+                href="javascript:alert('My Left Eye.');" alt="Информация">
+        </map>
+    </p>
+
+    <!-- <script type="text/javascript">
+        $(function () {
+            $('.map').maphilight();
+        });
+    </script> -->
+</body>
+
+</html>
